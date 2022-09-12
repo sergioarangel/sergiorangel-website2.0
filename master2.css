@@ -78,6 +78,11 @@ html {
     margin-right: auto;
 }
 
+.main{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
 nav {
     order: 1;
 }
@@ -95,6 +100,7 @@ nav {
 
 li a:hover{
     color: rgba(0,136, 169, 1);
+    transition: all 0.3s ease 0s;
 }
 
 .cta{
