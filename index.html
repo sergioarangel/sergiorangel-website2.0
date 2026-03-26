@@ -1,62 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Sergio Rangel</title>
-    <meta name="Description" content="">
-    <meta name="Viewpoint" content="width=device-width, intial-scale=1">
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
-    <link rel="stylesheet" href="master2.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sergio Rangel | Solutions Engineer</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<div>
-<header>
-        <a href="index.html"> <img class="logo" src="img/logo_transparent.png" alt="logo" width="100" height="100"></a>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                
-            </ul>    
-        </nav>
-        <a class="cta" href="#socials"><button>Socials</button></a>
-    </header>
-</div>&nbsp;
-<div class="main">
-<h1 style="text-align: center;">Hey, I'm Sergio</h1>
-<h2 style="text-align: center;">Welcome to my website. Feel free to look around and learn more about me and my work.
-</h2>
-<table style="margin-left: auto; margin-right: auto;">
-</table>&nbsp;
-<table style="margin-left: auto; margin-right: auto;">
-</table>&nbsp;
-<ul class="table">
-<p style="text-align: center;">(I created this Website using HTML, CSS, and JavaScript. The documentation is on my Github!)</p>
-<center><img src="img/Headshot.png" width="400vw" ></center>
+<!-- Custom cursor -->
+<div id="cDot"></div>
+<div id="cRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">SR</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hbg" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-grid"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="hero-content">
+    <div class="badge sr" style="--dl:.1s">
+      <span class="bdot"></span>
+      Solutions Engineer &middot; New York, NY
     </div>
-    
-<footer>&nbsp;
-<p>&nbsp;&nbsp;</p>
-<p class="socials" id="socials" style="text-align: center;">All Rights Reserved 2024 &ndash; Sergio Rangel</p>
-<table style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td><a title="Gmail" href="mailto:srangel@uwo.ca" target="_blank" rel="noopener" style="text-decoration: none">
-                <img src="img/Gmail.svg" alt="Gmail" width="30" height="30"/>
-                </a>&nbsp;</td>
-<td><a title="Linkedin" href="https://www.linkedin.com/in/sergio-rangel-9204a51b4/" target="_blank" rel="noopener" style="text-decoration: none">
-                <img src="img/LinkedIN.svg" alt="LinkedIN" width="30" height="30" />
-                </a>&nbsp;</td>
-<td><a title="Github" href="https://github.com/sergioarangel" target="_blank" rel="noopener">
-                <img src="img/Github.svg" width="30" height="30" alt="Github" />
-                </a></td>
-</tr>&nbsp;
-</tbody>
-</table>&nbsp;
+    <h1 class="hero-title sr" style="--dl:.2s">
+      <span>Sergio</span><span class="ac">Rangel</span>
+    </h1>
+    <div class="hero-role sr" style="--dl:.35s">
+      I <span id="ticker"></span><span class="caret">|</span>
+    </div>
+    <p class="hero-sub sr" style="--dl:.45s">
+      Bridging technical depth with client strategy, delivering reliable integrations,
+      scalable solutions, and measurable impact for enterprise clients.
+    </p>
+    <div class="actions sr" style="--dl:.55s">
+      <a href="#experience" class="btn btn-p">View Experience</a>
+      <a href="#contact" class="btn btn-g">Get in Touch</a>
+    </div>
+  </div>
+  <div class="scroll-ind"><div class="scroll-line"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-vis sr">
+        <div class="orbit-ring"></div>
+        <div class="avatar"><span>SR</span></div>
+        <div class="otag" style="--a:0deg">SQL</div>
+        <div class="otag" style="--a:72deg">APIs</div>
+        <div class="otag" style="--a:144deg">WordPress</div>
+        <div class="otag" style="--a:216deg">Python</div>
+        <div class="otag" style="--a:288deg">OAuth</div>
+      </div>
+      <div class="about-text sr" style="--dl:.15s">
+        <p class="lbl">About me</p>
+        <h2 class="h2">Turning complex <em>technical</em> problems into <em>elegant</em> solutions</h2>
+        <p>
+          I'm a Computer Science graduate from Western University with hands-on experience
+          across fintech, enterprise software, and academic research. As an Intermediate Solutions
+          Engineer at Mako Fintech, I work at the crossroads of client success and technical
+          delivery, owning implementations, pre-sales evaluations, and production reliability.
+        </p>
+        <p>
+          Fluent in English and Spanish, I bring both engineering rigour and clear communication
+          to every engagement.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-top"><span class="snum" data-target="3">0</span><span class="sunit">+</span></div>
+            <span class="slbl">Years of experience</span>
+          </div>
+          <div class="stat">
+            <div class="stat-top"><span class="snum" data-target="14">0</span><span class="sunit">+</span></div>
+            <span class="slbl">Customer evaluations</span>
+          </div>
+          <div class="stat">
+            <div class="stat-top"><span class="snum" data-target="40">0</span><span class="sunit">%</span></div>
+            <span class="slbl">Incident reduction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <p class="lbl">Career</p>
+    <h2 class="h2">Experience</h2>
+    <div class="timeline">
+
+      <article class="titem sr">
+        <div class="tmark"><div class="tmark-i"></div></div>
+        <div class="tcard">
+          <div class="thead">
+            <div><h3 class="tco">Mako Fintech</h3><p class="tro">Intermediate Solutions Engineer</p></div>
+            <span class="tdt">Apr 2025 &ndash; Present</span>
+          </div>
+          <ul class="tbul">
+            <li>Led technical implementations across multiple asset management clients, delivering customized data workflows and platform configurations aligned with client operating models.</li>
+            <li>Acted as technical lead across <strong>14+ customer evaluations</strong>, translating requirements into validated solution designs that supported deal progression.</li>
+            <li>Diagnosed production issues via SQL, log analysis, and API tracing, achieving a <strong>40% reduction</strong> in repeat incidents over 4 months.</li>
+            <li>Implemented webhook and OAuth integrations enabling secure, real-time platform connectivity.</li>
+          </ul>
+          <div class="ttags"><span>SQL</span><span>OAuth</span><span>Webhooks</span><span>Pre-Sales</span><span>API Tracing</span></div>
+        </div>
+      </article>
+
+      <article class="titem sr" style="--dl:.1s">
+        <div class="tmark"><div class="tmark-i"></div></div>
+        <div class="tcard">
+          <div class="thead">
+            <div><h3 class="tco">EMCO Corporation</h3><p class="tro">Software Engineer Intern</p></div>
+            <span class="tdt">May 2023 &ndash; May 2024</span>
+          </div>
+          <ul class="tbul">
+            <li>Sustained <strong>99.9% uptime</strong> for backend services processing thousands of daily transactions across procurement and distribution workflows.</li>
+            <li>Built RESTful APIs and data integrations in Python, Java, and .NET, improving downstream data accuracy by <strong>~20%</strong>.</li>
+            <li>Refactored error handling and logging for Linux-based batch workflows, reducing manual intervention and improving operational reliability.</li>
+          </ul>
+          <div class="ttags"><span>Python</span><span>Java</span><span>.NET</span><span>REST APIs</span><span>Linux</span></div>
+        </div>
+      </article>
+
+      <article class="titem sr" style="--dl:.2s">
+        <div class="tmark"><div class="tmark-i"></div></div>
+        <div class="tcard">
+          <div class="thead">
+            <div><h3 class="tco">Ivey Business School</h3><p class="tro">Programmer Intern</p></div>
+            <span class="tdt">May 2022 &ndash; Dec 2022</span>
+          </div>
+          <ul class="tbul">
+            <li>Automated data collection pipelines with Python, NumPy, and BeautifulSoup, cutting manual preparation effort by <strong>45%+</strong>.</li>
+            <li>Designed APIs and data pipelines supporting analytics and reporting for academic researchers across multiple departments.</li>
+            <li>Consolidated large datasets to improve data integrity and standardize reporting outputs.</li>
+          </ul>
+          <div class="ttags"><span>Python</span><span>NumPy</span><span>BeautifulSoup</span><span>Pandas</span><span>Data Pipelines</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills section" id="skills">
+  <div class="container">
+    <p class="lbl">Toolkit</p>
+    <h2 class="h2">Skills &amp; Technologies</h2>
+    <div class="skills-grid">
+      <div class="sg sr">
+        <h4>Languages</h4>
+        <div class="pills">
+          <span>Python</span><span>JavaScript</span><span>Java</span>
+          <span>C / C++</span><span>C#</span><span>SQL</span><span>HTML/CSS</span>
+        </div>
+      </div>
+      <div class="sg sr" style="--dl:.08s">
+        <h4>DevOps &amp; Cloud</h4>
+        <div class="pills">
+          <span>Linux</span><span>Kubernetes</span><span>GitHub</span>
+          <span>REST APIs</span><span>OAuth</span><span>Webhooks</span>
+        </div>
+      </div>
+      <div class="sg sr" style="--dl:.16s">
+        <h4>Libraries &amp; Frameworks</h4>
+        <div class="pills">
+          <span>NumPy</span><span>Pandas</span><span>BeautifulSoup</span>
+          <span>Bootstrap</span><span>JUnit</span><span>.NET</span>
+        </div>
+      </div>
+      <div class="sg sr" style="--dl:.24s">
+        <h4>Tools &amp; Process</h4>
+        <div class="pills">
+          <span>Jira</span><span>Postman</span><span>Airbrake</span>
+          <span>VS Code</span><span>Slack</span><span>Pre-Sales</span><span>WordPress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <p class="lbl">Work</p>
+    <h2 class="h2">Projects &amp; Initiatives</h2>
+    <div class="pgrid">
+
+      <div class="pcard sr">
+        <div class="pico">&#x1F43E;</div>
+        <div class="pmeta">
+          <span class="ptyp">Nonprofit &middot; Dec 2022 &ndash; Present</span>
+          <h3>Puppies4Seniors</h3>
+        </div>
+        <p>Co-founded a nonprofit delivering pet-assisted community programs for seniors. Scaled program reach and volunteer participation by <strong>50%</strong> within the first year. Designed and deployed the public web platform.</p>
+        <div class="ptags"><span>Web Platform</span><span>Leadership</span><span>Community</span></div>
+        <div class="prole">Co-Founder &amp; Lead Tech Developer</div>
+      </div>
+
+      <div class="pcard sr" style="--dl:.1s">
+        <div class="pico">&#x2615;</div>
+        <div class="pmeta">
+          <span class="ptyp">Personal Project &middot; Jul &ndash; Aug 2025</span>
+          <h3>CoffeeCompass</h3>
+        </div>
+        <p>Built an interactive Cafe Finder web app enabling users to discover nearby cafes through a dynamic UI. Implemented search handling, dynamic result rendering, and cross-browser usability.</p>
+        <div class="ptags"><span>JavaScript</span><span>HTML/CSS</span><span>Google Maps API</span><span>Git</span></div>
+        <div class="prole">Solo Developer</div>
+      </div>
+
+      <div class="pcard sr" style="--dl:.2s">
+        <div class="pico">&#x1F393;</div>
+        <div class="pmeta">
+          <span class="ptyp">Education &middot; Sept 2020 &ndash; Apr 2025</span>
+          <h3>Western University: BSc Computer Science</h3>
+        </div>
+        <p>Completed a Computer Science degree with coursework in Operating Systems, Architecture, OOP, and Software Project Management. VP of Finance for Western Developers Society.</p>
+        <div class="ptags"><span>OS</span><span>OOP</span><span>Architecture</span><span>Leadership</span></div>
+        <div class="prole">VP Finance, Western Developers Society</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="contact-inner sr">
+      <p class="lbl">Let's connect</p>
+      <h2 class="ctitle">Got a challenge<br>worth <em>solving?</em></h2>
+      <p class="csub">Whether it's a pre-sales deep dive, a tricky integration, or an open role. I'd love to talk.</p>
+      <div class="clinks">
+        <a href="mailto:sergiorangel247594@gmail.com" class="cbtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          sergiorangel247594&#64;gmail.com
+        </a>
+        <a href="https://linkedin.com/in/sergioarangel02/" target="_blank" rel="noopener" class="cbtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          linkedin.com/in/sergioarangel02
+        </a>
+        <a href="tel:2269734841" class="cbtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+          </svg>
+          (226) 973-4841
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Sergio Rangel &middot; Built with care</p>
+  </div>
 </footer>
-    
+
+<script src="main.js"></script>
 </body>
 </html>
